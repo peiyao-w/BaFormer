@@ -1,0 +1,24 @@
+model:
+  name: 'bk_fde_tde' 
+  action_seg:
+    num_stage: 3
+    backbone:
+      name: None
+    frame_decoder:
+      name: 'ASFormerEncoder'  
+      input_dim: 2048
+      embed_dim: 64 
+    transformer_decoder:
+      name: 'TransformerDecoderMask_Boundary_MulKV' 
+      hidden_dim: 64 
+      num_queries: 100 
+      nheads: 3 
+      dim_feedforward: 128
+      dropout: 0.1 
+      dec_layers: 10 
+      enforce_input_project: False 
+      mask_dim: 64
+      deep_supervision: True 
+      num_patch: 6
+      threshold: 0.3 #if < threshold, True, not atttend to
+      layer_in_decode_block: 1
