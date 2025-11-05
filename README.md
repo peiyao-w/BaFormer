@@ -16,8 +16,7 @@ conda activate baformer
 
 # 3. Install dependencies
 pip install -r requirements.txt
-
-'''
+```
 
 ## Dataset Preparation
 data/
