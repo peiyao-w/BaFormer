@@ -4,8 +4,10 @@ This is the official implementation for the paper: "Efficient Temporal Action Se
 [![arXiv](https://arxiv.org/pdf/2405.15995)]
 
 ## 🚀 Overview
+BaFormer delivers competitive results while requiring less FLOPs and running time. Moreover, our query-based voting mechanism significantly reduces inference time required by the single-stage model.
+
 <div align="center">
-  <img src="fig/teaser.png" width="70%">
+  <img src="figures/inf_acc" width="70%">
 </div>
 
 
