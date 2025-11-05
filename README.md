@@ -61,24 +61,22 @@ data/
 ```
 ## 🧠 Training
 
-To train **BaFormer** on the selected dataset, run the following command:
+To train BaFormer on a selected dataset, you can specify the dataset name, split, and path using the following arguments:
 
 ```bash
-python main.py --config ./config/50salads.yaml
+python main.py --config configs/framed_en_de.yaml  dataset.name 50salads dataset.split 1 dataset.dataset_dir /path/to/your_data/
 ```
-
-If you have multiple GPUs, we recommend using Distributed Data Parallel (DDP) for faster training:
-
-```bash
-torchrun --nproc_per_node=8 main.py --config ./config/50salads.yaml
-```
+Here:
+- `dataset.name` defines which dataset to use (e.g., `gtea`, `breakfast`, or `50salads`).
+- `dataset.split` specifies the split index for training/testing.
+- `dataset.dataset_dir` points to the root directory where your dataset is stored.
 
 ## 📈 Evaluation
 
-After training the model, you can evaluate **BaFormer** on the test set using the following command:
+After training the model, you can evaluate BaFormer on the test set using the following command:
 
 ```bash
-python Inference.py --config ./configs/50salads.yaml --checkpoint ./results/exp_name/checkpoints/model_best.pth
+python Inference.py --config configs/framed_en_de.yaml --checkpoint experiment/checkpoints/model_best.pth dataset.name 50salads dataset.split 1 dataset.dataset_dir /path/to/your_data/
 ```
 
 ## 📂 Checkpoints and Logs
@@ -87,7 +85,7 @@ Checkpoints and logs will be automatically saved under:
 ```bash
 ./experiments/
  ├── 50salads/
- │      └── note/
+ │      └── bk_fde_tde/final/
  │           ├── 1/
  │               ├── checkpoint_best.pth
  │               ├── log_plain.txt
