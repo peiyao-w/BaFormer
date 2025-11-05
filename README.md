@@ -7,13 +7,13 @@ This is the official implementation for the paper: "Efficient Temporal Action Se
 BaFormer delivers competitive results while requiring less FLOPs and running time. Moreover, our query-based voting mechanism significantly reduces inference time required by the single-stage model.
 
 <div align="center">
-  <img src="figures/inf_acc.png" width="90%">
-  <p><em>Figure 1: Overall architecture of BaFormer.</em></p>
+  <img src="figures/inf_acc.png" width="80%">
+  <p><em>Figure 1: Accuray vs. inference time on 50Salads. The bubble size represents the FLOPs in inference. Under different backbones, BaFormer enjoys the benefit of boundary-aware query voting with less running time and improved accuracy.</em></p>
 </div>
 
 <div align="center">
-  <img src="figures/framework.png" width="90%">
-  <p><em>Figure 2: Overall architecture of BaFormer.</em></p>
+  <img src="figures/framework.png" width="99%">
+  <p><em>Figure 2: It predicts query classes and masks, along with boundaries from output heads. Although each layer in the Transformer decoder holds three heads, we illustrate the three heads in the last layer for simplicity.</em></p>
 </div>
 
 
