@@ -106,26 +106,7 @@ Checkpoints and logs will be automatically saved under:
 Our trained [checkpoints]() are provided below. Please place them in the `experiments/` directory before running evaluation.
 
 ## 📄 Other
-If you want to try the relabeling operation, run the code with the `--relabel` option. The following shows the results before and after relabeling:
 
-Results Before and After Relabeling
-| Split | Acc (%) | F1@10 | F1@25 | F1@50 | Edit |
-|:------|:-------:|:-----:|:-----:|:-----:|:-----:|
-| S1 | 84.49 | 81.57 | 80.65 | 73.73 | 77.54 |
-| S2 | 90.49 | 85.65 | 83.73 | 80.38 | 77.41 |
-| S3 | 88.26 | 86.33 | 85.37 | 81.53 | 82.71 |
-| S4 | 88.60 | 86.98 | 85.50 | 81.57 | 81.21 |
-| S5 | 91.27 | 86.28 | 85.29 | 80.30 | 77.83 |
-
-Results After Relabeling
-
-| Split | Acc (%) | F1@10 | F1@25 | F1@50 | Edit |
-|:------|:-------:|:-----:|:-----:|:-----:|:-----:|
-| S1 | 84.48 | 85.71 | 84.24 | 78.82 | 80.00 |
-| S2 | 90.95 | 91.00 | 89.97 | 86.38 | 85.18 |
-| S3 | 88.13 | 89.22 | 88.22 | 83.21 | 84.97 |
-| S4 | 88.68 | 89.23 | 88.21 | 84.62 | 83.67 |
-| S5 | 91.23 | 90.19 | 89.12 | 85.41 | 82.05 |
 
 
 ## Citation
