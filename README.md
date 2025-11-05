@@ -1,7 +1,7 @@
  # BaFormer
 This is the official implementation for the paper: "Efficient Temporal Action Segmentation via Boundary-aware Query Voting".
 
-[![arXiv](https://arxiv.org/pdf/2405.15995)]
+![arXiv](https://arxiv.org/pdf/2405.15995)
 
 ## 🚀 Overview
 BaFormer delivers competitive results while requiring less FLOPs and running time. Moreover, our query-based voting mechanism significantly reduces inference time required by the single-stage model.
