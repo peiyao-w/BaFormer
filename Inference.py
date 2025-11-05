@@ -243,7 +243,7 @@ def inference_bd_peak(prediction, threshold):
             mask_ref[mask_split,star:end] = 1
         mask_cls = F.softmax(mask_cls, dim=-1)[..., :-1]
         r = torch.einsum('qc,ql->cl', mask_cls, mask_ref).transpose(0, 1)
-        # r = _relabeling(r, 100)  ## different for different dataset
+        r = _relabeling(r, 100)  #
         processed_results.append(r)
     seg_pred = torch.stack(processed_results, dim=0)
     return seg_pred
