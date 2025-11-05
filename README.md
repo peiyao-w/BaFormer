@@ -1,7 +1,7 @@
  # BaFormer
 This is the official implementation for the paper: "**Efficient Temporal Action Segmentation via Boundary-aware Query Voting**".
 [![arXiv](https://img.shields.io/badge/arXiv-2405.15995-b31b1b.svg)](https://arxiv.org/pdf/2405.15995)
-[![NeurIPS](https://img.shields.io/badge/NeurIPS-2024-blue.svg)]([https://nips.cc/virtual/2024/poster/12345](https://proceedings.neurips.cc/paper_files/paper/2024/file/42770daf4a3384b712ea9c36e9279998-Paper-Conference.pdf))
+[![NeurIPS](https://img.shields.io/badge/NeurIPS-2024-blue.svg)]([https://nips.cc/virtual/2024/poster/12345](https://proceedings.neurips.cc/paper_files/paper/2024/file/42770daf4a3384b712ea9c36e9279998-Paper-Conference.pdf)
 
 
 [📄 arXiv](https://arxiv.org/pdf/2405.15995) | [🧠 NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2024/file/42770daf4a3384b712ea9c36e9279998-Paper-Conference.pdf)
