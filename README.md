@@ -101,7 +101,7 @@ Checkpoints and logs will be automatically saved under:
  ├── gtea/
  └── breakfast/
 ```
-Our trained [checkpoints]() are provided below. Please place them in the `experiments/bk_fde_tde/final/` directory before running evaluation.
+Our trained [checkpoints]() are provided below. Please place them in the `experiments/final/` directory before running evaluation.
 
 ## 📄 Other
 
