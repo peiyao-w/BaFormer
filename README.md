@@ -1,7 +1,11 @@
  # BaFormer
 This is the official implementation for the paper: "Efficient Temporal Action Segmentation via Boundary-aware Query Voting".
+[![arXiv](https://img.shields.io/badge/arXiv-2405.15995-b31b1b.svg)](https://arxiv.org/pdf/2405.15995)
+[![NeurIPS](https://img.shields.io/badge/NeurIPS-2024-blue.svg)](https://nips.cc/virtual/2024/poster/12345)
+[![Supplementary](https://img.shields.io/badge/Supplementary-Material-lightgrey.svg)](https://your-link.com/supplementary.pdf)
 
-[arXiv](https://arxiv.org/pdf/2405.15995)
+[📄 arXiv](https://arxiv.org/pdf/2405.15995) | [🧠 NeurIPS](https://nips.cc/virtual/2024/poster/12345) | [📘 Supplementary](https://your-link.com/supplementary.pdf)
+
 
 ## 🚀 Overview
 BaFormer delivers competitive results while requiring less FLOPs and running time. Moreover, our query-based voting mechanism significantly reduces inference time required by the single-stage model.
