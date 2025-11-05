@@ -1,7 +1,7 @@
  # BaFormer
 This is the official implementation for the paper: "Efficient Temporal Action Segmentation via Boundary-aware Query Voting".
 
-[![arXiv]([https://img.shields.io/badge/arXiv-2409.12345-b31b1b.svg)](https://arxiv.org/abs/2409.12345](https://arxiv.org/pdf/2405.15995))
+[![arXiv](https://arxiv.org/pdf/2405.15995)
 
 ## 🛠️ Installation
 
