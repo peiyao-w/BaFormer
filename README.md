@@ -68,6 +68,15 @@ If you have multiple GPUs, we recommend using Distributed Data Parallel (DDP) fo
 ```bash
 torchrun --nproc_per_node=8 main.py --config ./config/50salads.yaml
 ```
+
+## 📈 Evaluation
+
+After training the model, you can evaluate **BaFormer** on the test set using the following command:
+
+```bash
+python Inference.py --config ./configs/50salads.yaml --checkpoint ./results/exp_name/checkpoints/model_best.pth
+```
+
 ## 📂 Checkpoints and Logs
 Checkpoints and logs will be automatically saved under:
 
