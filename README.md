@@ -19,6 +19,9 @@ pip install -r requirements.txt
 ```
 
 ## Dataset Preparation
+(1) To obtain the features and ground-truth annotations, please download the data as described in [Data Preparation](https://github.com/yabufarha/ms-tcn), and organize it according to the following structure. Then update the data path in the code to match the location of your downloaded dataset.
+
+```bash
 data/
  ├── 50salads/
  │    ├── mapping.txt/
@@ -33,9 +36,47 @@ data/
  │          ├── test.split3.bundle
  │          ├── test.split4.bundle
  │          └── test.split5.bundle
-  
+ │    └── groundTruth/
+ │    └── feature/
  ├── gtea/
  └── breakfast/
+```
+## 🧠 Training
+
+To train **BaFormer** on the selected dataset, run the following command:
+
+```bash
+python main.py --config ./config/50salads.yaml
+```
+
+If you have multiple GPUs, we recommend using Distributed Data Parallel (DDP) for faster training:
+
+```bash
+torchrun --nproc_per_node=8 main.py --config ./config/50salads.yaml
+```
+## 📂 Checkpoints and Logs
+Checkpoints and logs will be automatically saved under:
+
+```bash
+./experiments/
+ ├── 50salads/
+ │      └── note/
+ │           ├── 1/
+ │               ├── checkpoint_best.pth
+ │               ├── log_plain.txt
+ │               ├── log.txt
+ │               ├── last_checkpoint
+ │               ├── config.yaml
+ │               ├── config_min.yaml
+ │               ├── env.yaml
+ │               └── logs_epoch/
+ │           ├── 2/
+              ....
+
+ ├── gtea/
+ └── breakfast/
+```
+
 
 ## Citation
 
