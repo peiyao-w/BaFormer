@@ -3,6 +3,12 @@ This is the official implementation for the paper: "Efficient Temporal Action Se
 
 [![arXiv](https://arxiv.org/pdf/2405.15995)]
 
+## 🚀 Overview
+<div align="center">
+  <img src="fig/teaser.png" width="70%">
+</div>
+
+
 ## 🛠️ Installation
 
 ```bash
