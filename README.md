@@ -93,7 +93,7 @@ Checkpoints and logs will be automatically saved under:
 
 
 ## Citation
-
+```bash
 @article{wang2024efficient,
   title={Efficient temporal action segmentation via boundary-aware query voting},
   author={Wang, Peiyao and Lin, Yuewei and Blasch, Erik and Ling, Haibin and others},
@@ -102,3 +102,4 @@ Checkpoints and logs will be automatically saved under:
   pages={37765--37790},
   year={2024}
 }
+```
